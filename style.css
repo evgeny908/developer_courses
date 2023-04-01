@@ -1,36 +1,27 @@
-/* при paddings и borders значение ширины элемента меняться не будет*/ 
 *{
     box-sizing: border-box; 
 }
 
-/* обнулим margin у body, для корректного отображения */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #383838; /*задали цвет текста на всей страницу*/
+    color: #383838; 
 }
 
-/* зададим максимальную ширину:  max-width: 1446px; */
 .container {
     max-width: 1146px;
     margin: 0 auto;
-    /* на время добавим границу, чтобы видеть пределы в которых работаем:*/
-    /* border: 1px  solid #000; */
 } 
 
 header {
     background-color: #BEB7D8;
-    /*height: 90px;
-    display: flex;
-    align-items: center;
-    слетела ширина*/
     padding: 13.5px 0;
 }
 
 .header-info {
     display: flex;
-    justify-content: space-between; /*теперь два ребенка класса header-info: <a> b <div class="contact" отталкиваются друг от друга, прижимаясь к краям, и ссылки дети .contact все сместились вправо */
-    align-items: center; /*центрируем по второстепенной оси*/
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .logo {
@@ -38,29 +29,29 @@ header {
     height: 34px;
 }
 
-.contacts a {             /*обращение к <a> в .contacts*/
-    color: #383838;     /*поменяли цвет текста в .contacts <a>*/
-    text-decoration: none; /*убрали подчеркивание*/
-    font-size: 12px;      /*размер текста класса*/
-    margin-right: 25px;   /*внешний отступ справа*/
-    display: inline-flex; /*сделали их в строку */
-    align-items: center;  /*по центру втор оси */
+.contacts a {             
+    color: #383838;     
+    text-decoration: none; 
+    font-size: 12px;      
+    margin-right: 25px;   
+    display: inline-flex; 
+    align-items: center;  
 }
 
-.contacts a img {        /*обращение к <img> d <a> в .contacts*/
-    margin-right: 6px;  /*внешний отступ с правой стороны*/
+.contacts a img {        
+    margin-right: 6px;  
     width: 15px;
     height: 15px;
 }
 
 .btn {
-    background-color: #006BA7; /*фон кнопки*/
-    color: #FFFFFF;            /*цвет текста*/
-    font-size: 12px;             /*размер текста*/
-    border: none;                /*убираем границу вокруг кнопки*/
-    width: 160px;                /*задаем ширину кнопки для класса btn*/
-    padding: 13.2px 0;           /*внутренний отступ от текста до края кнопки*/   
-    border-radius: 20px;         /*радиус кнопки*/
+    background-color: #006BA7; 
+    color: #FFFFFF;            
+    font-size: 12px;             
+    border: none;                
+    width: 160px;                
+    padding: 13.2px 0;            
+    border-radius: 20px;         
 }
 
 .header-btn {
@@ -73,15 +64,15 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('images/laptop\ 1.png'); /*добавляем фоновы img*/
-    background-repeat: no-repeat; /*убираем повторение img*/
-    background-position: bottom right; /*позизионируем справа внизу*/
+    background-image: url('images/laptop\ 1.png'); 
+    background-repeat: no-repeat; 
+    background-position: bottom right; 
 }
 
 .courser-info h1 {
     font-size: 36px;
     color: #006BA7;
-    margin: 0; /*внешний отступ от заголовка*/
+    margin: 0; 
 }
 
 .courser-info span {
@@ -90,9 +81,9 @@ header {
 }
 
 .buttons {
-    width: 350px;   /*ширина блока 350px*/
-    display: flex;  /*подключим flexbox*/
-    justify-content: space-between; /*отталкиваются по главной оси*/
+    width: 350px;   
+    display: flex; 
+    justify-content: space-between; 
     margin-top: 50px;
 } 
 
@@ -101,18 +92,15 @@ header {
 }
 
 .education-info {
-    display: flex; /*сейчас блоки выстроились в длину, друг за другом*/
-    flex-wrap: wrap; /*переносим блоки, теперь они лежат один на другом*/
-    /*поэтому дочерним эелементам нужно указать ограниченную ширину*/
-    justify-content: space-around; /*Равномерно распределяет все элементы по ширине flex-блока*/
-    padding: 70px 0 60px; /*70 сверзу, по бокам 0, 60 снизу*/
+    display: flex; 
+    flex-wrap: wrap; 
+    
+    justify-content: space-around; 
+    padding: 70px 0 60px; 
 }
 
-/*указываем ширину с макета 335px*/
 .education-info .card {
     width: 335px;
-    /*Для лучшего понимания сделаем границу*/
-    /* border: 1px solid red; */
     font-size: 14px;
 }
 
